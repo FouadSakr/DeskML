@@ -1,4 +1,4 @@
-# Edge-ANN-Benchmarking
+# EdgeML
 This program processes one dataset and evaluates the best ANN among a set of predefined models (specified in configuration). 
 
 It outputs the model in hdf5 file format, to be imported by CubeAI, together with some .h files that could be useful for processing data on the microcontroller.
