@@ -1,0 +1,10 @@
+# https://stackoverflow.com/questions/3719243/best-practices-for-adding-gitignore-file-for-python-projects
+# https://stackoverflow.com/questions/9665399/how-do-i-ignore-all-files-in-a-folder-with-a-git-repository-in-sourcetree
+# Stop tracking 
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.log
+*.h5
+out/
+dt.png
