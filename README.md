@@ -39,6 +39,6 @@ gpus.py - Get names of the enabled GPUs
 ## Version
 Currently working with Python 3.6, Keras 2.2.4 and Tensorflow 1.8.0
 
-## References:
+## References
 F., Sakr, F., Bellotti, R., Berta, A., De Gloria, "Machine Learning on Mainstream Microcontrollers," Sensors 2020, 20, 2638.
 https://www.mdpi.com/1424-8220/20/9/2638
