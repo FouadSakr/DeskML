@@ -24,16 +24,26 @@ https://www.mdpi.com/1424-8220/20/9/2638
 
 ### Input
 #### Dataset
-Expected csv file in ../datasets/
+Expected csv file in ../ELM-datasets/
 
 \<ds_name\> is the name of the dataset (ds_name does not include the .csv extension)
 
 #### Configuration files
 config.py exposes the characteristics the dataset to be processed and the parameters to be analyzed for a selected algorithm (e.g., 'mle' algorithm for automatic PCA), training and cross-validation
 
+For Linear SVM:
+- SVMConfig.py: configuration file for Linear SVM contains the parameters to be defined by the user.
+
+For K-NN:
+- SVMConfig.py: configuration file for K-NN contains the parameters to be defined by the user.
+
+For Decison Tree:
+- SVMConfig.py: configuration file for Decision Tree contains the parameters to be defined by the user.
+
 For ANN only:
-- ./config/\<ds_name\>/activeFuncs.dat specifies the various activation functions that could be used in all the layers
-- ./config/\<ds_name\>/layerShape.dat specifies the possible shapes of the layers of the ANN.
+- ANNConfig.py: configuration file for ANN contains the parameters to be defined by the user.
+- ./ANNconfig/ActivationFunction.dat specifies the various activation functions that could be used in all the layers
+- /ANNconfig/LayerShape.dat specifies the possible shapes of the layers of the ANN.
 
 ### Output
 
@@ -61,5 +71,7 @@ python main.py
 
 python gpus.py - Get names of the enabled GPUs 
 
-## Version
-Currently tested with Python 3.6, Keras 2.2.4 and Tensorflow 1.8.0
+## Needed packages:
+$pip install freeze
+$pip freeze > requirements.txt 
+$pip install -r requirements.txt
